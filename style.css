@@ -1,41 +1,366 @@
-html {
-    font-size: 18px;
-    background: #DEEDF0;
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+  background-color: #b5e1f414;
+  overflow: hidden;
 }
 
-.home-screen {
-    display: flex;
-    flex-direction: row;
+.page .header {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 653px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-top: -4px;
+  margin-left: -4px;
+  margin-right: -4px;
+  background-color: #b5e1f387;
+  border-radius: 0px 0px 30px 30px;
+  overflow: hidden;
+  border: 4px solid;
+  border-color: #000000;
+  opacity: 0.9;
 }
 
-.photo-socials {
-    display: flex;
-    flex-direction: column;
+.page .about-me-text {
+  width: 614px;
+  height: 174px;
+  font-size: 96px;
+  position: relative;
+  font-family: "Actor-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
 }
 
-.photo {
-    width: 360px;
-    height: 286px;
-    display: flex;
-    align-items: center;
-    a margin: 1rem;
-    border-radius: 60px;
-    background: rgba(253, 250, 250, 0.97);
+.page .main {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 61px;
+  position: relative;
+  flex: 0 0 auto;
 }
 
-.socials {
-    margin: 1rem;
-    background: rgba(253, 250, 250, 0.97);
-    border-radius: 60px;
-    display: flex;
-    flex-flow: row wrap;
-    column-gap: 0.5rem;
-    row-gap: 0.5rem;
-
+.page .social-photo {
+  display: flex;
+  flex-direction: column;
+  width: 437.28px;
+  height: 1126px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  padding: 0px 12px;
+  position: relative;
 }
 
-.aboutMe {
-    margin: 1rem;
-    background: rgba(253, 250, 250, 0.97);
-    border-radius: 60px;
+.page .photo {
+  display: inline-flex;
+  flex-direction: column;
+  height: 322px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  padding: 59px 79px;
+  position: relative;
+  margin-left: -4px;
+  margin-right: -28.5px;
+  background-color: #ffffff;
+  border-radius: 60px;
+  overflow: hidden;
+  border: 4px solid;
+  border-color: #000000;
+}
+
+.page .my-photo {
+  position: relative;
+  width: 279.78px;
+  height: 198px;
+  margin-top: -1px;
+  object-fit: cover;
+}
+
+.page .socials {
+  display: flex;
+  width: 446px;
+  height: 583px;
+  align-items: center;
+  gap: 10px;
+  padding: 94px 45px 94px 23px;
+  position: relative;
+  margin-left: -4px;
+  margin-right: -28.72px;
+  background-color: #ffffff;
+  border-radius: 60px;
+  overflow: hidden;
+  border: 4px solid;
+  border-color: #000000;
+}
+
+.page .group {
+  position: relative;
+  width: 382.89px;
+  height: 441px;
+  margin-top: -27px;
+  margin-bottom: -19px;
+  margin-right: -4.89px;
+}
+
+.page .github {
+  position: absolute;
+  width: 152px;
+  height: 146px;
+  top: 295px;
+  left: 0;
+  object-fit: cover;
+}
+
+.page .gmail {
+  position: absolute;
+  width: 183px;
+  height: 127px;
+  top: 314px;
+  left: 200px;
+  object-fit: cover;
+}
+
+.page .whatsapp {
+  position: absolute;
+  width: 138px;
+  height: 136px;
+  top: 10px;
+  left: 14px;
+  object-fit: cover;
+}
+
+.page .telegram {
+  position: absolute;
+  width: 183px;
+  height: 156px;
+  top: 0;
+  left: 188px;
+  object-fit: cover;
+}
+
+.page .about-me {
+  display: inline-flex;
+  height: 915px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0px 34px 0px 54px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-right: -4px;
+  background-color: #ffffff;
+  border-radius: 60px;
+  overflow: hidden;
+  border: 4px solid;
+  border-color: #000000;
+}
+
+.page .text-wrapper {
+  width: 1294px;
+  font-size: 64px;
+  position: relative;
+  font-family: "Actor-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.page .skills {
+  display: flex;
+  width: 2082px;
+  height: 1720px;
+  align-items: center;
+  justify-content: center;
+  gap: 122px;
+  position: relative;
+  margin-right: -162px;
+  overflow: hidden;
+}
+
+.page .previos-work {
+  position: relative;
+  max-width: 700px;
+  width: 708px;
+  max-height: 1440px;
+  height: 1448px;
+  margin-left: -147px;
+  z-index: 2;
+  background-color: #ffffff;
+  border-radius: 50px;
+  overflow: hidden;
+  border: 4px solid;
+  border-color: #000000;
+}
+
+.page .overlap-group {
+  position: relative;
+  width: 545px;
+  height: 1224px;
+  left: 73px;
+}
+
+.page .frame {
+  position: absolute;
+  width: 356px;
+  height: 105px;
+  top: 0;
+  left: 54px;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-color: #000000;
+}
+
+.page .div {
+  position: absolute;
+  width: 317px;
+  height: 125px;
+  top: -24px;
+  left: 19px;
+  font-family: "Actor-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.page .work-text {
+  position: absolute;
+  width: 545px;
+  height: 1133px;
+  top: 91px;
+  left: 0;
+  font-family: "Actor-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.page .soft-sklls {
+  position: relative;
+  max-width: 700px;
+  width: 708px;
+  max-height: 1440px;
+  height: 1448px;
+  z-index: 1;
+  background-color: #ffffff;
+  border-radius: 50px;
+  overflow: hidden;
+  border: 4px solid;
+  border-color: #000000;
+}
+
+.page .about-me-text-wrapper {
+  position: absolute;
+  width: 356px;
+  height: 105px;
+  top: 0;
+  left: 155px;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-color: #000000;
+}
+
+.page .soft-text {
+  position: absolute;
+  width: 545px;
+  height: 1135px;
+  top: 115px;
+  left: 78px;
+  font-family: "Actor-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.page .hard-skills {
+  position: relative;
+  max-width: 700px;
+  width: 708px;
+  max-height: 1440px;
+  height: 1448px;
+  z-index: 0;
+  background-color: #ffffff;
+  border-radius: 50px;
+  overflow: hidden;
+  border: 4px solid;
+  border-color: #000000;
+}
+
+.page .soft-s-text {
+  position: absolute;
+  width: 545px;
+  height: 1133px;
+  top: 115px;
+  left: 55px;
+  font-family: "Actor-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.page .footer {
+  display: flex;
+  flex-direction: column;
+  width: 1928px;
+  height: 70px;
+  align-items: flex-end;
+  justify-content: space-around;
+  position: relative;
+  margin-left: -4px;
+  margin-right: -4px;
+  background-color: #b5e1f387;
+  border-radius: 30px 30px 0px 0px;
+  overflow: hidden;
+  border: 4px solid;
+  border-color: #000000;
+  opacity: 0.9;
+}
+
+.page .made-with-flaticon {
+  position: relative;
+  width: 370px;
+  height: 32px;
+  font-family: "Actor-Regular", Helvetica;
+  font-weight: 400;
+  color: #00000080;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.page .span {
+  font-family: "Actor-Regular", Helvetica;
+  font-weight: 400;
+  color: #00000080;
+  font-size: 20px;
+  letter-spacing: 0;
+}
+
+.page .text-wrapper-2 {
+  text-decoration: underline;
 }
