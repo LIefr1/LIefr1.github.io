@@ -1,48 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-
-    <title>Buisness card</title>
-</head>
-
-<body>
-    <div class="home-screen">
-        <div class="photo-socials">
-            <div class="photo">
-                <img src="/assets/MyPhoto.png" style="width: 9rem;">
+<html>
+  <head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header"><div class="about-me-text">RESUME</div></header>
+      <div class="main">
+        <div class="social-photo">
+          <div class="photo"><img class="my-photo" src="img/my-photo.png" /></div>
+          <div class="socials">
+            <div class="group">
+              <img class="github" src="img/github.png" />
+              <img class="gmail" src="img/gmail.png" />
+              <img class="whatsapp" src="img/whatsapp.png" />
+              <img class="telegram" src="img/telegram.png" />
             </div>
-            <div class="socials">
-                <div id="whats-app" class="grid-item">
-                    <input type="image" src="/assets//whatsapp.png" alt="WhatsApp" width="80" height="80">
-                </div>
-                <div id="telegram" class="grid-item">
-                    <input type="image" src="/assets//telegram.png" alt="Telegram">
-                </div>
-                <div id="github" class="grid-item">
-                    <input type="image" src="/assets//github.png" alt="Github">
-                </div>
-                <div id="gmail" class="grid-item">
-                    <input type="image" src="/assets//gmail.png" alt="Gmail">
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="aboutMe">
-            <div class="aboutMe-text">
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta tristique finibus. Proin id
-                    imperdiet enim. Etiam sapien odio, faucibus eget nibh eget, euismod semper arcu. Integer pulvinar
-                    ante non lorem gravida porta. Morbi sed lorem in elit porttitor pretium tempor et nulla. Vestibulum
-                    ultrices metus non arcu egestas pulvinar. </p>
-            </div>
+        <div class="about-me">
+          <p class="text-wrapper">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta tristique finibus. Proin id imperdiet
+            enim. Etiam sapien odio, faucibus eget nibh eget, euismod semper arcu. Integer pulvinar ante non lorem
+            gravida
+          </p>
         </div>
+      </div>
+      <div class="skills">
+        <div class="previos-work">
+          <div class="overlap-group">
+            <div class="frame"><div class="div">Workplaces</div></div>
+            <p class="work-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta tristique finibus. Proin id imperdiet
+              enim. Etiam sapien odio, faucibus eget nibh eget, euismod semper arcu. Integer pulvinar ante non lorem
+              gravida
+            </p>
+          </div>
+        </div>
+        <div class="soft-sklls">
+          <div class="about-me-text-wrapper"><div class="div">Soft skills</div></div>
+          <p class="soft-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta tristique finibus. Proin id imperdiet
+            enim. Etiam sapien odio, faucibus eget nibh eget, euismod semper arcu. Integer pulvinar ante non lorem
+            gravida
+          </p>
+        </div>
+        <div class="hard-skills">
+          <div class="about-me-text-wrapper"><div class="div">Hard skills</div></div>
+          <p class="soft-s-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta tristique finibus. Proin id imperdiet
+            enim. Etiam sapien odio, faucibus eget nibh eget, euismod semper arcu. Integer pulvinar ante non lorem
+            gravida
+          </p>
+        </div>
+      </div>
+      <footer class="footer">
+        <p class="made-with-flaticon">
+          <span class="span">Made with </span>
+          <span class="text-wrapper-2">flaticon icons</span>
+          <span class="span">&nbsp;</span>
+        </p>
+      </footer>
     </div>
-
-    </div>
-    <div class="scroll-down"> </div>
-</body>
-
+  </body>
 </html>
