@@ -1,41 +1,220 @@
-html {
-    font-size: 18px;
-    background: #DEEDF0;
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  position: relative;
 }
 
-.home-screen {
-    display: flex;
-    flex-direction: row;
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%; 
+  height: 4rem;
+  gap: 1rem;
+  background-color: #FEF9EF;
+  border-radius: 0px 0px 10px 10px;
+  overflow: hidden;
+  border: 4px transparent;
+  opacity: 0.9;
+} 
+
+.header-text {
+  font-size: 24px;
+  font-family: "Actor-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  width: 100%;
+
+}
+@media only screen and (max-width: 600px){
+  html{
+    font-size: 14px;
+  }
 }
 
-.photo-socials {
-    display: flex;
-    flex-direction: column;
+.main {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  /*   position: relative; */
+}
+
+.social-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0px 0.5rem;
 }
 
 .photo {
-    width: 360px;
-    height: 286px;
-    display: flex;
-    align-items: center;
-    a margin: 1rem;
-    border-radius: 60px;
-    background: rgba(253, 250, 250, 0.97);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  gap: 0.4rem;
+  padding: 3rem 4.5rem;
+  background-color: #ffffff;
+  border-radius: 60px;
+  overflow: hidden;
+  border: 4px transparent;
+  border-color: #000000;
 }
+
 
 .socials {
-    margin: 1rem;
-    background: rgba(253, 250, 250, 0.97);
-    border-radius: 60px;
-    display: flex;
-    flex-flow: row wrap;
-    column-gap: 0.5rem;
-    row-gap: 0.5rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around; /* This will create equal spacing between the items */
+  padding: 5rem 2rem;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 60px;
+  overflow: hidden;
+  border: 4px transparent;
+  border-color: #000000;
+}
+
+.group {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Equal width columns for the images */
+  gap: 0.5rem; /* Adjust the gap as per your design */
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+
+.github, .gmail, .whatsapp, .telegram .my-photo {
+  padding: 1rem;
+  object-fit: cover;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #ffffff;
+  border-radius: 60px;
+  height: fit-content;
+  overflow: hidden;
+  border: 4px transparent #000000; 
+
 
 }
 
-.aboutMe {
-    margin: 1rem;
-    background: rgba(253, 250, 250, 0.97);
-    border-radius: 60px;
+.text-wrapper {
+  font-size: 54px;
+  font-family: "Actor-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  padding:15.75%;
+
+}
+
+.skills {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: fit-content;
+
+}
+
+.skillNames {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  height: fit-content;
+  width:100%;
+  border: 2px transparent; 
+  background-color: #ffffff;
+  border-bottom-width: 4px;
+  border-image-source: linear-gradient(to left,#3A9EFA, #3C9EF9,#3C9EF9 ,#3A9EFA);
+}
+
+
+#previos-work, #soft-skills, #hard-skills {
+  text-align: center;
+  font:inherit;
+  overflow: hidden;
+  margin: 0.8rem;
+  margin-block-start: 5%;
+  margin-block-end: 5%;
+  border: 4px transparent #000000;
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+#soft-skills {
+  color:#1EC1F4 ;
+
+}
+
+
+.skill-text {
+  padding: 10%;
+  font-weight: 400;
+  text-align: justify;
+  font-size: x-large;
+  background-color: #ffffff;
+  border: 2px transparent;
+  border-radius: 80px;
+  width:80%;
+
+}
+
+
+
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 4rem;
+  align-items: flex-end;
+  justify-content: space-around;
+  background-color: #FEF9EF;
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+  border: 4px transparent;
+  opacity: 0.9;
+}
+
+.made-with-flaticon {
+  width: fit-content;
+  height: fit-content;
+  font-family: "Actor-Regular", Helvetica;
+  font-weight: 400;
+  color: #00000080;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.span {
+  font-family: "Actor-Regular", Helvetica;
+  font-weight: 400;
+  color: #00000080;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.text-wrapper-2:hover {
+  text-decoration: underline;
 }
