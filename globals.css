@@ -6,7 +6,7 @@
 html,
 body {
   scroll-behavior: smooth;
-  background-color: #CCF2F4;
+  background-color: rgba(0, 0, 0, 60%);
   font-family: "Actor-Regular", Helvetica;
 
 }
