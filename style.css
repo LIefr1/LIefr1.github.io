@@ -31,11 +31,6 @@
   width: 100%;
 
 }
-@media only screen and (max-width: 600px){
-  html{
-    font-size: 14px;
-  }
-}
 
 .main {
   display: inline-flex;
@@ -74,7 +69,7 @@
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-around; /* This will create equal spacing between the items */
+  justify-content: space-around;
   padding: 5rem 2rem;
   position: relative;
   background-color: #ffffff;
@@ -86,8 +81,8 @@
 
 .group {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Equal width columns for the images */
-  gap: 0.5rem; /* Adjust the gap as per your design */
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
   position: relative;
   width: fit-content;
   height: fit-content;
@@ -97,6 +92,9 @@
   padding: 1rem;
   object-fit: cover;
 }
+.github, .gmail, .whatsapp, .telegram :hover {
+  cursor: pointer;
+} 
 
 .about-me {
   display: flex;
@@ -120,7 +118,7 @@
   letter-spacing: 0;
   line-height: normal;
   padding:15.75%;
-
+  
 }
 
 .skills {
@@ -131,7 +129,7 @@
   align-items: center;
   overflow: hidden;
   height: fit-content;
-
+  
 }
 
 .skillNames {
@@ -159,11 +157,12 @@
   border: 4px transparent #000000;
   font-size: xx-large;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 #soft-skills {
   color:#1EC1F4 ;
-
+  
 }
 
 .skill-text {
@@ -222,3 +221,96 @@
   text-decoration: underline;
   cursor: pointer
 }
+
+@media only screen and (max-width: 550px){
+    html{
+      font-size: 14px;
+    }
+    .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 1rem;
+      /*   position: relative; */
+    }
+    .skills {
+      margin-top: 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: auto;
+      height: fit-content;
+      width: fit-content;
+    
+    }
+    .photo {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      gap: 0.4rem;
+      padding: 3rem 4.5rem;
+      background-color: #ffffff;
+      border-radius: 60px;
+      overflow: hidden;
+      border: 4px transparent;
+      border-color: #000000;
+    }
+
+    .socials {
+      display: flex;
+      width: 100%;
+      height: inherit;
+      align-items: center;
+      justify-content: space-around; 
+      padding: 5rem 2rem;
+      position: relative;
+      background-color: #ffffff;
+      border-radius: 60px;
+      overflow: hidden;
+      border: 4px transparent;
+      border-color: #000000;
+    }
+    .group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem; 
+      position: relative;
+      width: fit-content;
+      height: fit-content;
+    }
+    
+    .github, .gmail, .whatsapp, .telegram .my-photo {
+      padding: 1rem;
+      object-fit: cover;
+    }
+    .skillNames {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 1px;
+      height: fit-content;
+      width: 100%;
+      background-color: #ffffff;
+      border-radius: 10px;
+      border-bottom-style: solid;
+      border-bottom-color: #1EC1F4;
+      border-bottom-width: 4px;
+    }
+    
+    
+    #previos-work, #soft-skills, #hard-skills {
+      text-align: center;
+      font:inherit;
+      overflow: hidden;
+      margin: 0.8rem;
+      margin-block-start: 5%;
+      margin-block-end: 5%;
+      border: 4px transparent #000000;
+      font-size: xx-large;
+      font-weight: 600;
+    }
+  }
