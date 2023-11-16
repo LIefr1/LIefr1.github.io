@@ -1,5 +1,5 @@
 <?php
-print_r($_POST);
+
 
 $name = $_POST['full-name'];
 $email = $_POST['email'];
