@@ -1,4 +1,14 @@
+
+
+
+
+
+
 $(document).ready(()=>{
+
+
+    const H = $('.skill-text').height();
+    $('.skill-text').prop('minHeight', H);
 
     $('.text-wrapper-2').on('click', ()=> {
         window.open(
@@ -28,23 +38,26 @@ $(document).ready(()=>{
 
     $('#hard-skills-text').on('click', ()=> {
         $(this).css('color', '#1EC1F4');
-        $(".skill-text").text(`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Aenean a mi quis augue fringilla faucibus. Donec posuere dapibus dignissim.
-        Integer semper quam mauris. Mauris vehicula, neque id feugiat fermentum, tortor erat cursus ex,
-        a volutpat massa arcu ut lectus. Mauris1`);
+        $(".skill-text").text(`Я владению углубленными знаниями языков Python3, 
+        PHP. Базовым владением JavaScript,Dart, C++. Также знаком с языками верстки HTML, CSS
+        Знаком с фрейморком Flutter`);
         
     });
     $('#soft-skills-text').on('click', ()=> {
         $(this).css('color', '#1EC1F4');
-        $(".skill-text").text(`
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta tristique finibus. Proin id imperdiet
-        enim. Etiam sapien odio, faucibus eget nibh eget, euismod semper arcu. Integer pulvinar ante non lorem
-        gravida`);
-
+        $(".skill-text").text(`Владею английским языком на B2-C1 уровн
+        wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww`);
     });
+    $('#contact-me-wrapper').on('click', ()=> {
+        $('.send-info-modal').show();
+    });
+
     $('#previos-work-text').on('click', ()=> {
         $(this).css('color', '#1EC1F4');
-        $(".skill-text").text("Prev work");
+        $(".skill-text").text(`Среднее образование на базе 9 клссов,
+        Не законченное среднее профисиональное образование
+        по специальности Информационные системы и програмирование 
+        в коледже ВятГУ`);
 
     });
 

@@ -35,7 +35,7 @@
       <div class="skills">
         <div class="skillNames">
           <div id="previos-work">
-            <p id="previos-work-text" class="skill-title">Workplaces</p>
+            <p id="previos-work-text" class="skill-title">Education</p>
           </div>
           <div id="soft-skills">
             <p id="soft-skills-text"class="skill-title">Soft skills</p>
@@ -45,12 +45,26 @@
           </div>
         </div>
         <div class="skill-text">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta tristique finibus. Proin id imperdiet
-            enim. Etiam sapien odio, faucibus eget nibh eget, euismod semper arcu. Integer pulvinar ante non lorem
-            gravida
+          <p id = "skill-text-par">
+            Владею английским языком на B2-C1
+            Также испанским на увроне A2, но активно изучаю
           </p>
           </div>
+          <div id="contact-me-wrapper">
+            <p id="contact-me">Contact me</p>
+          </div>
+          <div class="send-info-modal" >
+            <div class="send-your-contacts">Send your <br>contacts</div>
+            <form method="post" enctype="multipart/form-data" action="main.php">
+              <div class="input-group">
+                <input id="full-name" name="full-name" placeholder="Full name:" type="text" maxlength="200" />
+                <input id="email" name="email" placeholder="Email:" type="email" maxlength="200" />
+                <input id="phone"name="phone" placeholder="Phone number:" type="number" maxlength="12" />
+                <input id="company" name="company" placeholder="Company name:" type="text"maxlength='200' />
+                <button class="send-btn" autofocus type="submit">SEND</button>
+              </div>
+          </form>
+      </div>
       </div>
       <footer class="footer">
         <p class="made-with-flaticon">
