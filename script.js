@@ -1,4 +1,14 @@
+
+
+
+
+
+
 $(document).ready(()=>{
+
+
+    const H = $('.skill-text').height();
+    $('.skill-text').prop('minHeight', H);
 
     $('.text-wrapper-2').on('click', ()=> {
         window.open(
@@ -35,9 +45,13 @@ $(document).ready(()=>{
     });
     $('#soft-skills-text').on('click', ()=> {
         $(this).css('color', '#1EC1F4');
-        $(".skill-text").text(`Владею английским языком на B2-C1 уровне`);
-
+        $(".skill-text").text(`Владею английским языком на B2-C1 уровн
+        wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww`);
     });
+    $('#contact-me-wrapper').on('click', ()=> {
+        $('.send-info-modal').show();
+    });
+
     $('#previos-work-text').on('click', ()=> {
         $(this).css('color', '#1EC1F4');
         $(".skill-text").text(`Среднее образование на базе 9 клссов,
