@@ -61,6 +61,18 @@ $(document).ready(()=>{
 
     });
 
+    $('.send-btn').on('click', ()=>{
+        data = $('#aform');
+        $.ajax({
+            url: "main.php",
+            method: 'POST',
+            data: data.serialize(), 
+            success: (response) =>{ 
+                alert("Sent");
+            }
+        })
+    })
+
     
 
 })
