@@ -422,18 +422,16 @@
   .send-info-modal {
     display: none;
     position: absolute;
-    top:0 ;
-    right:0 ;
-    left:0 ;
-    bottom:0 ; 
+
     flex-direction: column;
     align-items: center;
     justify-items: center;
     padding: 5%;
- 
     background-color: #ffffff;
     border:2px solid #000000;
     border-radius: 15px;
+    width: 90%;
+    height: fit-content ;
   }
   
   .send-your-contacts {
