@@ -1,5 +1,4 @@
 <?php
-
 $name = $_POST['full-name'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];

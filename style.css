@@ -408,6 +408,7 @@
       object-fit: cover;
     }
      
+
   #previos-work, #soft-skills, #hard-skills {
     text-align: center;
     font:inherit;
@@ -487,3 +488,17 @@
   }
   
   }
+
+    #previos-work, #soft-skills, #hard-skills {
+      text-align: center;
+      font:inherit;
+      overflow: hidden;
+      margin: 0.8rem;
+      margin-block-start: 5%;
+      margin-block-end: 5%;
+      border: 4px transparent #000000;
+      font-size: xx-large;
+      font-weight: 600;
+    }
+  }
+
